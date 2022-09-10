@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+/* font-family: 'Fraunces', serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+
+}
+
+.container{
+  margin: 30px auto;
+  padding: 0 30px;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.img img {
+  width:100%;
+  display: inherit;
+}
+
+.text {
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text h3 {
+  font-size:12px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 5px;
+}
+
+.text h2 {
+  font-family: 'Fraunces', serif;
+  font-size:25px;
+  font-weight: bold;
+  color: hsl(212, 21%, 14%);
+
+}
+
+.text p{
+  font-size:13px;
+  color: hsl(228, 12%, 48%);
+  line-height: 20px;
+}
+.price{
+  display: flex;
+  align-items: center;
+}
+
+p.new-price{
+    font-family: 'Fraunces', serif;
+    font-size: 25px;
+  color: hsl(212, 21%, 14%);
+  padding-right: 30px;
+}
+
+p.old-price{
+text-decoration: line-through;
+}
+
+.btn {
+  padding: 10px 0;
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 10px;
+  border:none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+}
+.btn img {
+  padding-right: 20px;
+}
+
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+.btn:hover {
+  background-color: hsl(158, 36%, 30%);
+}
+
+
+
+
+@media only screen and (max-width: 628px) {
+  .card{
+        grid-template-columns: 1fr;
+}
+.img img {
+  max-height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+.text h2, .text h3, .text p, .price {
+  padding-bottom: 20px;
+}
+}
