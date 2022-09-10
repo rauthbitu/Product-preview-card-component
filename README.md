@@ -1,6 +1,6 @@
-##Hello - Bitu Rauth Here
-![fff](./design/bitu.png)
-##Please Follow Me  
+
+# Bitu Rauth Here
+
 # Frontend Mentor - Product preview card component
 
 ![Design preview for the Product preview card component coding challenge](./design/desktop-preview.jpg)
